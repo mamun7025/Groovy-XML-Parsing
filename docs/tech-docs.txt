@@ -1,2 +1,3 @@
 https://www.baeldung.com/groovy-xml
 https://groovy-lang.org/processing-xml.html
+https://community.smartbear.com/t5/ReadyAPI-Questions/Sharing-is-caring-how-to-modify-xml-files-using-ReadyApi/td-p/168661

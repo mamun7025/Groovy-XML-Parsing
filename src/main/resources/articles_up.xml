@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><articles>
+  <article>
+    <title>SpringBoot tutorial</title>
+    <author id="3">
+      <firstname>Daniele</firstname>
+      <lastname>Ferguson</lastname>
+    </author>
+    <release-date>2018-06-12</release-date>
+  </article>
+</articles>

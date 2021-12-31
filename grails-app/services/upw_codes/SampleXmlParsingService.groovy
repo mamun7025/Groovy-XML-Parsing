@@ -2,6 +2,7 @@ package upw_codes
 
 import grails.gorm.transactions.Transactional
 import grails.util.Holders
+import groovy.xml.XmlUtil
 import org.codehaus.groovy.runtime.InvokerHelper
 
 @Transactional
@@ -43,6 +44,12 @@ class SampleXmlParsingService {
     }
 
 
+    def deleteXmlNode(){
+//        articles.article
+//                .findAll { it.author.'@id'.text() != "3" }
+//                .each { articles.remove(it) }
+    }
+
     def doParseXmlDoc() {
 
 
@@ -62,6 +69,22 @@ class SampleXmlParsingService {
                 println(innerNode)
             }
         }
+
+        articles.article
+                .findAll { it.author.'@id'.text() != "3" }
+                .each { articles.remove(it) }
+
+        println(articles.children().size())
+
+
+
+        // Construct a FileWriter object and assigns it to the variable 'writer'
+        // def writer = new FileWriter("D:\\mijn\\Web.config")
+        def writer = new FileWriter("E:\\ME_NEW_2021\\CV_JOB\\UPW_Codes\\SampleXmlParsing\\src\\main\\resources\\articles_up.xml")
+        // Write the changes to the file
+        XmlUtil.serialize(articles, writer)
+        // Close file
+        writer.close()
 
 
     }
