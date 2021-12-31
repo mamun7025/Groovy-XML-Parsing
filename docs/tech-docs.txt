@@ -1,0 +1,2 @@
+https://www.baeldung.com/groovy-xml
+https://groovy-lang.org/processing-xml.html
